@@ -12,7 +12,7 @@
 (setq display-line-numbers-type t)
 
 (setq org-directory "~/Org/")
-(setq org-roam-directory (file-truename "~/Org/roam"))
+(setq org-roam-directory (file-truename "~/Org/Roam"))
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
@@ -42,7 +42,7 @@
 
  (setq-default bookmark-set-fringe-mark nil)
  (setq org-log-done 'time)
- (setq org-archive-location "~/Org/archive/2023-archive.org::datetree/")
+ (setq org-archive-location "~/Org/Archive/2023-archive.org::datetree/")
  (setq org-archive-save-context-info '(olpath itags ltags))
  (setq org-startup-folded t)
  (setq org-todo-repeat-to-state t)
