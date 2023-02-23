@@ -31,16 +31,14 @@
            "DONE(d)")))
 
  (setq org-agenda-files '("~/Org/inbox.org"
-                          "~/Org/gtd.org"
-                         "~/Org/tickler.org"))
+                          "~/Org/gtd.org"))
 
  (setq org-capture-templates '(("i" "[inbox]" entry
                                (file "~/Org/inbox.org")
                                "* %?")))
 
  (setq org-refile-targets '(("~/Org/gtd.org" :maxlevel . 3)
-                           ("~/Org/someday.org" :level . 1)
-                           ("~/Org/tickler.org" :maxlevel . 2)))
+                           ("~/Org/someday.org" :maxlevel . 3)))
 
  (setq-default bookmark-set-fringe-mark nil)
  (setq org-log-done 'time)
@@ -61,7 +59,7 @@
                  (org-agenda-skip-scheduled-if-done t)
                  (org-agenda-skip-deadline-if-done t)
                  (org-agenda-skip-timestamp-if-done t)
-                 (org-agenda-files '("~/Org/gtd.org" "~/Org/tickler.org"))))
+                 (org-agenda-files '("~/Org/gtd.org"))))
           (todo "NEXT"
                 ((org-agenda-overriding-header "\nNext actions:")
                  (org-agenda-prefix-format "  %?b%? e")
@@ -85,7 +83,7 @@
        (tags "CLOSED>=\"<today>\""
                 ((org-agenda-overriding-header "\nCompleted today:")
                  (org-agenda-prefix-format "  ")
-                 (org-agenda-files '("~/Org/gtd.org" "~/Org/tickler.org")))))
+                 (org-agenda-files '("~/Org/gtd.org")))))
          ((org-agenda-compact-blocks t)))))
 
  (setq org-tags-column 0)
